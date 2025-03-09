@@ -1,0 +1,55 @@
+Captain Olimar, now exploring Earth with the help of Pingmins.
+
+After many adventures in the galaxy, wonderful alien encounters on strange planets, and some more troubles with your spaceship, here you are: Crashed on an unknown planet with no way back home... But hopefully some alien ships followed you in your trip and are still answering to your calls! Maybe exploring this planet with their help will help you find a way home? 
+
+[b]Any question or problem to use this mod? [url=http://steamcommunity.com/sharedfiles/filedetails/?id=314929396]Click here to read the FAQ.[/url][/b]
+
+[b]FEATURES[/b]
+- Olimar Goat: You have a space suit and you can command Pingmins.
+
+[b]KEYBOARD CONTROLS[/b]
+- [b][RightClick] + [2]:[/b] Call a red Onion.
+- [b][RightClick] + [3]:[/b] Call a yellow Onion.
+- [b][RightClick] + [4]:[/b] Call a blue Onion.
+- [b][RightClick] + [1]:[/b] Call the Pingmins in the circle to follow you.
+- [b][RightClick] + [R]:[/b] Throw the first Pingmin following you.
+
+[b]GAMEPAD CONTROLS[/b]
+- [b][LT] + [DPadUp]:[/b] Call a red Onion.
+- [b][LT] + [DPadLeft]:[/b] Call a yellow Onion.
+- [b][LT] + [DPadDown]:[/b] Call a blue Onion.
+- [b][LT] + [LB]:[/b] Call the Pingmins in the circle to follow you.
+- [b][LT] + [Y]:[/b] Throw the first Pingmin following you.
+
+[b]CHARACTERISTICS[/b]
+- The Onion is a Pingmin spaceship, there can only be one on the map.
+- If you lick an item under the Onion, it will be converted into Pingmins of the same color.
+- After throwing a Pingmin, it won't follow you any more.
+- Pingmins will follow any player calling them if they are not currently following another player.
+- If you throw a Pingmin with the cursor on a creature, it will attack this creature.
+- If you throw a Pingmin with the cursor on an item, it will hold this item.
+- The number of Pingmins required to hold an item is displayed on the item.
+- When enough Pingmins are holding the item, they will transport it to the Onion and the Onion will convert it into Pingmins.
+- If you throw a Pingmin with the cursor on another Pingmin, it will get the same behaviour as the target (attack/hold/wait).
+- If you lick a Pingmin under the Onion, it will go back to the Onion (dissapear).
+- Red Pingmins do more damages in combat.
+- Yellow Pingmins can be thrown further.
+- Blue Pingmins walk faster.
+
+[b]EASTER EGGS[/b]
+- [spoiler]Your Pingmins are too slow to follow you? Throw them behind and call them back ;)[/spoiler]
+- [spoiler]When you throw a Pingmin, the flying body can knock out some objects or creatures :p[/spoiler]
+
+[b]KNOWN BUGS[/b]
+- Pingmins might end stuck on obstacles when they try to reach their objective.
+- Pingmins can have trouble to transport some large items, putting more of them on the same item should help.
+- Sometimes Pingmin throw can fail, in this case the Pingmin will just drop on top of your goat.
+- Having too many pingmins on the map may lag your game... Send some Pingmins back to the Onion if that happen.
+
+[b]DEV NOTES[/b]
+[quote=About this mod]One more brilliant idea taken from the (now closed) request thread ^^ I never played Pikmin games myself, so I had to look for a lot of videos to figure out how it was working, and I'm pretty happy with the outcome :D
+Lots of reuse and also lots of improvements in this mod, the first one being the Knight AI from King Goat :) I needed Pingmins to follow you so obviously this is where I started. The basic mechanism was still working fine, once applied to penguin bodies, but I improved it anyway to avoid some recurring cases where wollowers would get stuck inside each other. For that I added a little avoidance behaviour, so that two Pingmins too close to each other will walk away to have more free space :)
+Then I had to update this AI to bring two new behaviour: The attack of a single target (default AI attack the closest enemy so it may change target over time), and the item transport. For the attacking part there was nothing too hard to do, as it's more like a limitation of an existing mechanism.
+For the item transport there was a lot more work involved. First of all I needed a way to carry movable items of the world, there is several ways to do that, but knowing that the item might be carried by more than one individual I decided to use the solution that disable physics on the object, and automatically place it at the center of all Pingmins holding it. Then I could adapt the Pingmins AI to move in the direction of the Onion while staying close enough to the item they should carry ^^
+The other abilities were more straight forward: I combined some lampposts and a light sphere to make the Onion shape, I took the quest circle to make the area where you call Pingmins more visible and a cursor to see where you throw them.
+[/quote]
